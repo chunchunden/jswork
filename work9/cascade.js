@@ -1,5 +1,5 @@
 let collegeSelectArr = ['电子与通信学院', '先进制造学院','电气技术学院', '汽车学院', '计算机与设计学院', '外语商务学院', '经济贸易学院', '物流学院', '马克思主义学院'];
-let majorsSelectArr = [    ['电子', '电信', '通信', '嵌入', '物联'],
+let majorSelectArr = [    ['电子', '电信', '通信', '嵌入', '物联'],
     ['数控', '模具', '机设', '机自'],   
     ['机电', '电气', '建电', '建智', '空调', '光电', '机器人'],
     ['汽检', '汽配', '汽电', '汽营', '汽新'],  
@@ -74,17 +74,17 @@ let classSelectArr = [
     var majorSelect = document.getElementById('majorSelect'); 
     collegeSelect.onchange = function() {
         majorSelect.options.length = 0;
-        createOption(majorSelect, majorSelectArr[collegeSelect.vaule]);
+        createOption(majorSelect, majorSelectArr[collegeSelect.value]);
     }
     var classSelect = document.getElementById('classSelect');
     majorSelect.onchange = function () {
         classSelect.options.length = 0;
-        createOption(classSelect, classSelectArr[collegeSelect.vaule] [majorSelect.vaule]);
+        createOption(classSelect, classSelectArr[collegeSelect.value] [majorSelect.value]);
     }
     collegeSelect.onchange = function() {
         majorSelect.options.length = 0;
-        createOption(majorSelect, majorSelectArr[collegeSelect.vaule]);
-        if (collegeSelect.vaule >= 0) {
+        createOption(majorSelect, majorSelectArr[collegeSelect.value]);
+        if (collegeSelect.value >= 0) {
             majorSelect.onchange();
         } else {
             classSelect.options.length = 0;
