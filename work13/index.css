@@ -8,10 +8,17 @@ body {
     display: table;
     margin: 0 auto;
 }
-box-head{
+.box-head{
+    padding: 5px 20px;
+    background-color: darkred;
+    color: rgba(248, 248, 255, 0.87);
+    font-size: 14px;
+}
+.box-body{
     padding: 10px 20px;
 }
-box-body th {
+
+.box-body th {
     font-weight: normal;
     vertical-align: top;
     padding: 5px;
