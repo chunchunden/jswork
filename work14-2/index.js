@@ -1,5 +1,4 @@
-let endseconds = new Date().getTime() + 15*1000;
-let d = h =m =s =0;
+let endseconds = new Date().getTime() + 3600*1000;
 let id =setInterval(seckill,1000);
 function seckill(){
     let nowtime =new Date();
