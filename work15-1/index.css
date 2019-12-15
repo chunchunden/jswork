@@ -55,8 +55,8 @@
     width: 16px;
     height: 16px;
     line-height: 16px;
-    color: #84B3fd;
-    background-color: #84B3fd;
+    color: #FFF;
+    background-color: #BDBDBD;
     border: 0;
     cursor: pointer;
     border-radius: 2px;
@@ -65,7 +65,7 @@
 }
 .cart-reduce:hover,
 .cart-add:hover{
-    background-color: #ff33ff;
+    background-color: #FF9900;
 }
 .cart-num{
     margin: 5px;
